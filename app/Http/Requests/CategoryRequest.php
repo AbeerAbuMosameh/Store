@@ -25,7 +25,6 @@ class CategoryRequest extends FormRequest
      */
     public function rules()
     {
-
         return [
             'title' => 'required|string',
             'active' => 'in:0,1',
@@ -35,7 +34,7 @@ class CategoryRequest extends FormRequest
     public function messages()
     {
         return [
-            'title.required' => 'A title is required',
+//            'title.required' => 'A title is required',
         ];
     }
 }
