@@ -21,22 +21,22 @@ Route::get('/', function () {
 Route::get('/index', function () {
     return view('website.pages.index');
 });
-//
-//Route::get('/admins', function () {
-//    return view('admin.pages.index');
-//})->name('admin');
-//
-////products-details
-//Route::get('/products', function () {
-//    return view('website.pages.product');
-//});
-//
-//Route::get('/products-details', function () {
-//    return view('website.pages.product-details');
-//});
-//Route::get('/profile-authentication', function () {
-//    return view('website.pages.profile-authentication');
-//});
+
+Route::get('/admins', function () {
+    return view('admin.pages.index');
+})->name('admin');
+
+//products-details
+Route::get('/products', function () {
+    return view('website.pages.product');
+});
+
+Route::get('/products-details', function () {
+    return view('website.pages.product-details');
+});
+Route::get('/profile-authentication', function () {
+    return view('website.pages.profile-authentication');
+});
 
 Route::prefix('admin')->group(function () {
     Auth::routes();
